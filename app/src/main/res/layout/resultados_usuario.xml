@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="50">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4"
+                        android:hint="CPF"
+                        android:theme="@style/Theme.AppCompat.Light">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ResultadosUsuario_EditTextCpf"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:inputType="number"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+
+                    <ImageButton
+                        android:id="@+id/ResultadosUsuario_ImageButtonBuscar"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:backgroundTint="#00FFFFFF"
+                        android:onClick="pesquisarUsuario"
+                        android:src="@android:drawable/ic_menu_search" />
+
+
+                </LinearLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Nome"
+                    android:theme="@style/Theme.AppCompat.Light">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ResultadosUsuario_EditTextNome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="Taxa Metabólica Basal"
+                    android:theme="@style/Theme.AppCompat.Light">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ResultadosUsuario_EditTextTmb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:gravity="center"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="IMC"
+                        android:theme="@style/Theme.AppCompat.Light">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ResultadosUsuario_EditTextImc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:enabled="false"
+                            android:inputType="number"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:hint="Grau IMC"
+                        android:theme="@style/Theme.AppCompat.Light">
+
+                        <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/ResultadosUsuario_EditTextGrauImc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:enabled="false"
+                            android:inputType="number"
+                            android:textColor="#000000"
+                            android:textStyle="bold" />
+
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="60dp"
+                    android:hint="Comentário"
+                    android:theme="@style/Theme.AppCompat.Light">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/ResultadosUsuario_EditTextComentario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:enabled="false"
+                        android:inputType="textMultiLine"
+                        android:textColor="#000000"
+                        android:textStyle="bold" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+        <LinearLayout
+            android:id="@+id/ResultadosUsuario_LinearLayoutMetrica"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginStart="10dp"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/ResultadosUsuario_ButtonEnviarEmail"
+        android:theme="@style/Theme.MaterialComponents"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#4db8ff"
+        android:text="Enviar Por E-Mail"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:onClick="enviarEmail"/>
+
+</LinearLayout>
+

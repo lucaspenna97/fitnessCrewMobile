@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/Home_RelativeLayout_Principal"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e6e6e6"
+    android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp">
+
+        <LinearLayout
+            android:id="@+id/Home_LinearLayout_NovoParticipante"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#1AA3FF"
+                android:src="@mipmap/fitness"
+                android:scaleType="fitCenter"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="3"
+                android:backgroundTint="#4db8ff"
+                android:text="Cadastrar Novo Participante"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:onClick="cadastrarParticipante"
+                android:theme="@style/Theme.MaterialComponents" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/Home_LinearLayout_VerificarResultados"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:backgroundTint="#1AA3FF"
+                android:src="@mipmap/checklist"
+                android:scaleType="fitCenter"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="3"
+                android:backgroundTint="#4db8ff"
+                android:text="Verificar Resultados"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:onClick="verificarResultados"
+                android:theme="@style/Theme.MaterialComponents" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/Home_LinearLayout_Configuracoes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="#1AA3FF"
+                    android:src="@mipmap/gear"
+                    android:scaleType="fitCenter"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_weight="3"
+                android:backgroundTint="#4db8ff"
+                android:text="Configurações"
+                android:textColor="#FFFFFF"
+                android:textStyle="bold"
+                android:onClick="configuracoes"
+                android:theme="@style/Theme.MaterialComponents" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

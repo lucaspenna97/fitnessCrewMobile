@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D9D9D9"
+            android:gravity="center"
+            android:text="Enviar base de dados"
+            android:textColor="#8c8c8c"
+            android:textStyle="italic"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#D9D9D9"
+            android:gravity="center"
+            android:text="para FitnessCrew desktop ?"
+            android:textColor="#8c8c8c"
+            android:textStyle="italic"/>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/Configuracao_ButtonRabbitMq"
+            android:theme="@style/Theme.MaterialComponents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#4db8ff"
+            android:text="RabbitMQ (Mensageria)"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:onClick="servicosRabbitMq"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

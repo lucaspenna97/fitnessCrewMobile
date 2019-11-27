@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Fitness Crew</string>
+
+
+    <string-array name="sexo">
+        <item>Masculino</item>
+        <item>Feminino</item>
+    </string-array>
+
+
+</resources>
+
+
+
