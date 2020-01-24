@@ -11,7 +11,13 @@ import android.view.View;
 import androidx.annotation.Nullable;
 
 import com.example.fitnesscrew.R;
+import com.example.fitnesscrew.bean.User;
+import com.example.fitnesscrew.util.RetrofitConfig;
 import com.google.android.material.snackbar.Snackbar;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 public class Home extends Activity {
 
@@ -84,8 +90,29 @@ public class Home extends Activity {
     public void configuracoes(View view) {
         vibrator.vibrate(30);
 
-        Intent intent = new Intent(this, Configuracao.class);
-        startActivity(intent);
+        //Intent intent = new Intent(this, Configuracao.class);
+        //startActivity(intent);
+
+
+        RetrofitConfig retrofitConfig = new RetrofitConfig();
+        Call<String> call = retrofitConfig.getTest().findTest();
+
+        call.enqueue(new Callback<String>() {
+            @Override
+            public void onResponse(Call<String> call, Response<String> response) {
+                System.out.println(response.body());
+            }
+
+            @Override
+            public void onFailure(Call<String> call, Throwable t) {
+                System.out.println("Deu ruim");
+            }
+        });
+
+
+
+
+
 
     }
 
